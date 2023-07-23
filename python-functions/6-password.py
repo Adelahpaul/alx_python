@@ -16,7 +16,6 @@ def validate_password(password):
                             estr = True
                         else:
                             return False
-                        return estr
-    # else:
-    #     estr = False
-    # return estr
+    else:
+        estr = False
+    return estr
