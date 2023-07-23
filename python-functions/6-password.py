@@ -1,21 +1,6 @@
 def validate_password(password):
-    list = ['!', '@', '#', '$', '%', '&', '(', ')', '-', '_', '[', ']', '{', '}', ';', ':', '"', '.', '/', '<', '>', '?']
-    estr = True
-    if len(password) >= 8:
-        for i in password:
-            if i in list:
-                estr = True
-            else:
-                if i.isnumeric():
-                    estr = True
-                else:
-                    if i.isupper():
-                        estr = True
-                    else:
-                        if i.islower():
-                            estr = True
-                        else:
-                            return False
+    #list = ['!', '@', '#', '$', '%', '&', '(', ')', '-', '_', '[', ']', '{', '}', ';', ':', '"', '.', '/', '<', '>', '?']
+    if any(i.isupper() for i in password) and any(i.islower() for i in password) and any(i.isdigit() for i in password) and len(password) >= 8:
+        estr = True
     else:
-        estr = False
-    return estr
+        return False
