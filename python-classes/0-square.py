@@ -1,9 +1,11 @@
 class square:
-    def __init__(self, size):
-        self.size = size
-        Ar = size*size
+    pass
+x = square()
+y = square() 
+x.size1 
+y.size2
+val = x.size1 * y.size2
+p = square()
+p.val
+print(p.val)
 
-    def calcsqr(self):
-        print(self.size)
-
-p =square().calcsqr()
