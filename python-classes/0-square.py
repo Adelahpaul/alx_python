@@ -1,9 +1,7 @@
-class square:
+class Square:
     pass
-x = square()
-y = square() 
-x.size1 
-y.size2
-p = square(x.size1 * y.size2)
-print(p)
 
+size = Square()
+size.val1
+size.val2
+print(size.val1 * size.val2) 
