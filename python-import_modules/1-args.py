@@ -1,8 +1,15 @@
 #!/usr/bin/python3
-if __name__ == "__main__":
+if __name__ == '__main__':
     import sys
-
-
-print(f"{len(sys.argv)} argument:")
-for n in range(1, len(sys.argv)):
-    print(f"{n}: {sys.argv[n]}")
+    if (len(sys.argv) - 1) != 1:
+        print("{} arguments".format(len(sys.argv) - 1), end='')
+    else:
+        print("{} argument".format(len(sys.argv) - 1), end='')
+    if len(sys.argv) == 1:
+        print(".")
+    else:
+        print(":")
+    for count, argument in enumerate(sys.argv):
+        if (count == 0):
+            continue
+        print("{}: {}".format((count), argument))
