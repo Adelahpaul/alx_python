@@ -1,7 +1,11 @@
 #!/usr/bin/python3
+"""
+  defined and empty class
+"""
 
-""" defined and empty class
-    """
+
 class BaseGeometry:
-
-    pass
+ """
+   empty class
+ """
+ pass
